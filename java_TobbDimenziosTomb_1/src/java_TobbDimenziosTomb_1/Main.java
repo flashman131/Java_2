@@ -13,11 +13,12 @@ public class Main {
 			int hossz=beolvas.nextInt();
 			
 			float[] szamok=new float[hossz];
-			
+			float sum=0;
 			for(int i=0;i<szamok.length;i++)    //Körbejárás
 			{
 				System.out.print((i+1)+"Adj egy számot:");  // felhasználó számára szöveg
 				szamok[i]=beolvas.nextFloat();  // tömb értékadás
+				sum += szamok[i];
 			}
 			
 			System.out.println("A számok amiket bekértünk: ");
@@ -25,6 +26,7 @@ public class Main {
 			{
 				System.out.println(szamok[i]+", ");
 			}
+			System.out.println("A számok összege: "+sum);
 		}
 		catch(InputMismatchException e)
 		{
