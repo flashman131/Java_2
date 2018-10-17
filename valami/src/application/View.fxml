@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="400.0" maxWidth="250.0" minHeight="400.0" minWidth="250.0" prefHeight="400.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
+   <children>
+      <JFXButton layoutX="78.0" layoutY="329.0" onAction="#belepes" text="Bejelentkezés" />
+      <JFXTextField fx:id="felhasznalonev" layoutX="58.0" layoutY="172.0" />
+      <JFXPasswordField fx:id="jelszo" layoutX="58.0" layoutY="227.0" />
+      <Label layoutX="58.0" layoutY="148.0" text="Felhasználó" />
+      <Label layoutX="58.0" layoutY="212.0" text="Jelszó" />
+      <JFXCheckBox fx:id="checked" layoutX="157.0" layoutY="279.0" />
+      <Label layoutX="16.0" layoutY="279.0" text="Bejelentkezve maradok:" />
+      <ImageView fitHeight="102.0" fitWidth="135.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../logo.png" />
+         </image>
+      </ImageView>
+      <JFXSpinner layoutX="79.0" layoutY="27.0" />
+   </children>
+</AnchorPane>
