@@ -14,19 +14,19 @@ import javafx.scene.control.TextField;
 public class ViewController implements Initializable {
 
     @FXML
-    private TableView<?> tabla;
+    private TableView<Szemely> tabla;
     
     @FXML
-    private TableColumn<?, ?> tablaID;
+    private TableColumn<Szemely, String> tablaID;
 
     @FXML
-    private TableColumn<?, ?> tablaVezeteknev;
+    private TableColumn<Szemely, String> tablaVezeteknev;
 
     @FXML
-    private TableColumn<?, ?> tablalKeresztnev;
+    private TableColumn<Szemely, String> tablalKeresztnev;
 
     @FXML
-    private TableColumn<?, ?> tablaSzuletesidatum;
+    private TableColumn<Szemely, String> tablaSzuletesidatum;
 
     @FXML
     private TextField idMezo;
