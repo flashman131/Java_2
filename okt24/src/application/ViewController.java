@@ -43,7 +43,24 @@ public class ViewController implements Initializable {
     @FXML
     private TextField szuletesidatumMezo;
     
+
+    @FXML
+    void menuitemTorol(ActionEvent event) {
+    	Szemely szemelyTorol= tabla.getSelectionModel().getSelectedItem();
+    	tablaAdatok.remove(szemelyTorol);
+    }
     
+
+    @FXML
+    void menuitemSzerkeszt(ActionEvent event) {
+    	Szemely szemelySzerkeszt = tabla.getSelectionModel().getSelectedItem();
+    	tablaAdatok.remove(szemelySzerkeszt);
+    	idMezo.setText(szemelySzerkeszt.getId());
+    	vezeteknevMezo.setText(szemelySzerkeszt.getVezeteknev());
+    	keresztnevMezo.setText(szemelySzerkeszt.getKeresztnev());
+    	szuletesidatumMezo.setText(szemelySzerkeszt.getSzuletesidatum());
+    	
+    }
     private ObservableList<Szemely> tablaAdatok = FXCollections.observableArrayList();
     
     
