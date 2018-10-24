@@ -4,6 +4,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
+import javafx.beans.Observable;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -39,6 +42,12 @@ public class ViewController implements Initializable {
 
     @FXML
     private TextField szuletesidatumMezo;
+    
+    
+    private ObservableList<Szemely> tablaAdatok = FXCollections.observableArrayList();
+    
+    
+    
 
     @FXML
     void hozzaadGomb(ActionEvent event) {
@@ -58,10 +67,29 @@ public class ViewController implements Initializable {
     void menuitemNevjegy(ActionEvent event) {
 
     }
+    
+    
+    private void kezdoAdatok() {
+    	Szemely szemely1= new Szemely("1","Pusztai","Bence","1990-02-13");
+    	Szemely szemely2= new Szemely("2","Juhász","Bence","1994-03-27");
+    	Szemely szemely3= new Szemely("3","Kiss","Balázs","1983-02-14");
+    	tablaAdatok.add(szemely1);
+    	tablaAdatok.add(szemely2);
+    	tablaAdatok.add(szemely3);
+    }
+    
+    private void tablaAdatokBeallitasa() {
+    	tablaID.setCellValueFactory(cellData-> cellData.getValue().idProperty());
+    	tablaVezeteknev.setCellValueFactory(cellData-> cellData.getValue().vezeteknevProperty());
+    	tablalKeresztnev.setCellValueFactory(cellData-> cellData.getValue().keresztnevProperty());
+    	tablaSzuletesidatum.setCellValueFactory(cellData-> cellData.getValue().szuletesidatumProperty());
+    	tabla.setItems(tablaAdatok);
+    }
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+		kezdoAdatok();
+		tablaAdatokBeallitasa();
 		
 	}
 
