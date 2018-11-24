@@ -1,0 +1,18 @@
+public static <K, V extends Comparable<? super V>> TreeMap<K, V> rendez(TreeMap<K, V> a) {
+		TreeMap<K, V> sortByValue = new TreeMap<>(new Comparator<K>() {
+			@Override
+			public int compare(K o1, K o2) {
+				int compare = a.get(o2).compareTo(a.get(o1));
+				if (compare == 0) {
+					return 1;
+				} else {
+					return compare;
+				}
+
+			}
+		});
+		sortByValue.putAll(a);
+		return sortByValue;
+	}
+
+
