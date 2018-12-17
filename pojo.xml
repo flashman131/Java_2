@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="java-members" deleted="false" description="Create ArrayList for your POJO and read .txt, .csv and other files too." enabled="true" name="pojo">${:import(java.util.ArrayList, java.util.List, java.nio.file.Files, java.nio.file.Paths, java.io.IOException)}
+
+public static List&lt;${objektumNev}&gt; ${listaNev}() {
+	List&lt;${objektumNev}&gt; ${listaNev} = new ArrayList&lt;&gt;();
+	try {
+		List&lt;String&gt; beolvas = Files.readAllLines(Paths.get("${fileNev}"));
+		for (String sor : beolvas) {
+			String[] split = sor.split(";");
+
+			${objektumNev} o = new ${objektumNev}();
+
+			${listaNev}.add(o);
+		}
+	} catch (IOException e) {
+		System.err.println("Hiba a beolvasásnál!");
+	}
+	return ${listaNev};
+}
+</template></templates>
