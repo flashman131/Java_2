@@ -1,0 +1,20 @@
+RB14;Red Bull;Aston Martin Red Bull Racing;Max Verstappen;194 km/h
+FW41;Williams;Williams Martini Racing;Lance Stroll;208 km/h
+VJM11;Force India;Sahara Force India F1 Team;Sergio Pérez;201 km/h
+C37;Sauber;Alfa Romeo Sauber F1 Team;Marcus Ericsson;190 km/h
+W09 EQ Power+;Mercedes;Mercedes AMG Petronas Motorsport;Lewis Hamilton;210 km/h
+FW41;Williams;Williams Martini Racing;Szergej Szirotkin;195 km/h
+RB14;Red Bull;Aston Martin Red Bull Racing;Daniel Ricciardo;203 km/h
+R.S.18;Renault;Renault Sport Formula One Team;Nico Hülkenberg;192 km/h
+VF-18;Haas;Haas F1 Team;Romain Grosjean;209 km/h
+MCL33;McLaren;McLaren F1 Team;Fernando Alonso;197 km/h
+STR13;Toro Rosso;Red Bull Toro Rosso Honda;Brendon Hartley;201 km/h
+VF-18;Haas;Haas F1 Team;Kevin Magnussen;205 km/h
+STR13;Toro Rosso;Red Bull Toro Rosso Honda;Pierre Gasly;198 km/h
+W09 EQ Power+;Mercedes;Mercedes AMG Petronas Motorsport;Valtteri Bottas;191 km/h
+SF71H;Ferrari;Scuderia Ferrari;Sebastian Vettel;201 km/h
+VJM11;Force India;Sahara Force India F1 Team;Esteban Ocon;200 km/h
+R.S.18;Renault;Renault Sport Formula One Team;Carlos Sainz Jr.;193 km/h
+SF71H;Ferrari;Scuderia Ferrari;Kimi Räikkönen;195 km/h
+MCL33;McLaren;McLaren F1 Team;Stoffel Vandoorne;203 km/h
+C37;Sauber;Alfa Romeo Sauber F1 Team;Charles Leclerc;193 km/h
